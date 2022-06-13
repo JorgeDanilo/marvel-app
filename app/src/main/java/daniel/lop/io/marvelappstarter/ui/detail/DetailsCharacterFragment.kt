@@ -3,9 +3,11 @@ package daniel.lop.io.marvelappstarter.ui.detail
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import daniel.lop.io.marvelappstarter.databinding.FragmentDetailsCharacterBinding
 import daniel.lop.io.marvelappstarter.ui.base.BaseFragment
 
+@AndroidEntryPoint
 class DetailsCharacterFragment :
     BaseFragment<FragmentDetailsCharacterBinding, DetailsCharacterViewModel>() {
 

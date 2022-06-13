@@ -3,9 +3,11 @@ package daniel.lop.io.marvelappstarter.ui.search
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import daniel.lop.io.marvelappstarter.databinding.FragmentSearchCharacterBinding
 import daniel.lop.io.marvelappstarter.ui.base.BaseFragment
 
+@AndroidEntryPoint
 class SearchCharacterFragment :
     BaseFragment<FragmentSearchCharacterBinding, SearchCharacterViewModel>() {
 
