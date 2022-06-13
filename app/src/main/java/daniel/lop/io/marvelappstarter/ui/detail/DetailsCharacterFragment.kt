@@ -31,6 +31,11 @@ class DetailsCharacterFragment :
     private lateinit var characterModel: CharacterModel
     private val args: DetailsCharacterFragmentArgs by navArgs()
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        setHasOptionsMenu(true)
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         characterModel = args.character
