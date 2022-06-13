@@ -22,8 +22,10 @@ class CharactersAdapter : RecyclerView.Adapter<CharactersAdapter.CharacterViewHo
         }
 
         override fun areContentsTheSame(oldItem: CharacterModel, newItem: CharacterModel): Boolean {
-            return oldItem.id == newItem.id && oldItem.name == newItem.name && oldItem.description == newItem.description &&
-                    oldItem.thumbnailModel.path == newItem.thumbnailModel.path && oldItem.thumbnailModel.extension == newItem.thumbnailModel.extension
+            return oldItem.id == newItem.id && oldItem.name == newItem.name &&
+                    oldItem.description == newItem.description &&
+                    oldItem.thumbnailModel.path == newItem.thumbnailModel.path &&
+                    oldItem.thumbnailModel.extension == newItem.thumbnailModel.extension
         }
     }
 

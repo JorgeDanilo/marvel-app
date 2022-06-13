@@ -78,6 +78,5 @@ class ListCharacterFragment : BaseFragment<FragmentListCharacterBinding, ListCha
     override fun getViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentListCharacterBinding =
-        FragmentListCharacterBinding.inflate(inflater, container, false)
+    ) = FragmentListCharacterBinding.inflate(inflater, container, false)
 }
