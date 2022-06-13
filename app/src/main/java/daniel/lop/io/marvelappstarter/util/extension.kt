@@ -19,3 +19,11 @@ fun View.show() {
 fun View.hide() {
     visibility = View.INVISIBLE
 }
+
+fun String.limitDescription(characters: Int): String {
+    if (this.length > characters) {
+        val firstCharacter = 0
+        return "${this.substring(firstCharacter, characters)}..."
+    }
+    return this
+}
