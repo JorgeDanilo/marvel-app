@@ -11,7 +11,7 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseFragment<VB: ViewBinding, VM: ViewModel>: Fragment() {
 
     private var _binding: VB? = null
-    protected val binding get() = _binding
+    protected val binding get() = _binding!!
     protected abstract val viewModel: VM
 
     override fun onCreateView(
@@ -20,7 +20,7 @@ abstract class BaseFragment<VB: ViewBinding, VM: ViewModel>: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = getViewBinding(inflater, container)
-        return binding?.root
+        return binding.root
     }
 
     abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
