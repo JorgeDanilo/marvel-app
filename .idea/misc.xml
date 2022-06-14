@@ -14,6 +14,7 @@
         <entry key="..\:/MeusCursos/MeusCursosUdemy/Android/Marvel/starter/MarvelAppStarter/app/src/main/res/menu/menu_nav.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3572916666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/fragment_favorite_character.xml" value="0.3572916666666667" />
         <entry key="app/src/main/res/layout/fragment_list_character.xml" value="0.3572916666666667" />
         <entry key="app/src/main/res/layout/fragment_search_character.xml" value="0.3572916666666667" />
         <entry key="app/src/main/res/layout/item_character.xml" value="0.3572916666666667" />

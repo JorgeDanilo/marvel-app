@@ -3,6 +3,7 @@ package daniel.lop.io.marvelappstarter.ui.detail
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import daniel.lop.io.marvelappstarter.data.model.character.CharacterModel
 import daniel.lop.io.marvelappstarter.data.model.comic.ComicModelResponse
 import daniel.lop.io.marvelappstarter.repository.MarvelRepository
 import daniel.lop.io.marvelappstarter.ui.ResourceState
@@ -49,5 +50,9 @@ class DetailsCharacterViewModel @Inject constructor(
             }
         }
         return ResourceState.Error(response.message())
+    }
+
+    fun insert(characterModel: CharacterModel) = viewModelScope.launch {
+        repository.insert(characterModel)
     }
 }
