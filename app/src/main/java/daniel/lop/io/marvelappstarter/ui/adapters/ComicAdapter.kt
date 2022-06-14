@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import daniel.lop.io.marvelappstarter.data.model.comic.ComicModel
 import daniel.lop.io.marvelappstarter.databinding.ItemComicBinding
+import daniel.lop.io.marvelappstarter.util.loadImage
 
 class ComicAdapter : RecyclerView.Adapter<ComicAdapter.ComicViewHolder>() {
 
@@ -49,9 +49,10 @@ class ComicAdapter : RecyclerView.Adapter<ComicAdapter.ComicViewHolder>() {
             tvNameComic.text = comic.title
             tvDescriptionComic.text = comic.description
 
-            Glide.with(holder.itemView.context)
-                .load(comic.thumbnailModel.path + "." + comic.thumbnailModel.extension)
-                .into(imgComic)
+            loadImage(imgComic,
+                comic.thumbnailModel.path,
+                comic.thumbnailModel.extension
+            )
         }
     }
 }
